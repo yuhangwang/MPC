@@ -17,12 +17,13 @@ The binary/ folder contains both a tar.gz file and a folder, which are equivalen
 * Compiler: gcc version 4.4.7 20120313 (Red Hat 4.4.7-11)
 
 ### Compilation steps
+**(with GMP 4.3.2 and MPFR 2.4.2)**
 ```bash
 wget ftp://gcc.gnu.org/pub/gcc/infrastructure/mpc-0.8.1.tar.gz
 tar zxvf mpc-0.8.1.tar.gz
 mkdir build_mpc-0.8.1
 cd build_mpc-0.8.1
-../mpc-0.8.1/configure --prefix=/home/steven/install/libmpc/0.8.1 
+../mpc-0.8.1/configure --prefix=/home/steven/install/libmpc/0.8.1 --with-gmp=/home/install/libgmp/4.3.2 --with-mpfr=/home/install/libmpfr/2.4.2 --enable-shared=yes --enable-static=yes
 make
 make check
 make install

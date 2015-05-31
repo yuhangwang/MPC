@@ -17,7 +17,7 @@ old_library='libmpc.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -lmpfr -lgmp'
+dependency_libs=' -L/Scr/scr-test-steven/install/libgmp/4.3.2/lib -L/Scr/scr-test-steven/install/libmpfr/2.4.2/lib /Scr/scr-test-steven/install/libmpfr/2.4.2/lib/libmpfr.la /Scr/scr-test-steven/install/libgmp/4.3.2/lib/libgmp.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
